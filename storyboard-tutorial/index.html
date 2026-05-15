@@ -5,6 +5,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GPT-Image-2 API Storyboard 教學</title>
 <style>
+  /* ProtoLearn 返回首頁浮動按鈕 */
+  .pl-home-btn {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 9999;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: #fff;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: background 0.2s ease, transform 0.2s ease;
+    opacity: 0.75;
+  }
+  .pl-home-btn:hover {
+    background: rgba(0,0,0,0.65);
+    opacity: 1;
+    transform: translateX(-2px);
+  }
+  .pl-home-btn svg {
+    width: 14px;
+    height: 14px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
   :root {
@@ -408,6 +447,11 @@
 </style>
 </head>
 <body>
+
+<a class="pl-home-btn" href="../">
+  <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+  ProtoLearn
+</a>
 
 <nav>
   <div class="inner">
