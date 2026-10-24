@@ -1,0 +1,72 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>早安信</title>
+<style>:root{--paper:#f5f2e9;--ink:#1a1a18;--soft:#6b675c;--rule:#cfc9b8;--mark:#b9502f}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);
+ font-family:"Songti TC","Noto Serif TC",Georgia,"PingFang TC",serif;-webkit-font-smoothing:antialiased}
+a.cue{font-size:11px;letter-spacing:.1em;color:var(--mark);text-decoration:none;
+ border:1px solid currentColor;border-radius:2px;padding:0 5px;margin:0 3px;
+ text-indent:0;display:inline-block;line-height:1.5;vertical-align:1px}
+a.cue:hover{background:var(--mark);color:var(--paper)}
+.avatar{width:40px;height:40px;border-radius:50%;flex:none;background:#e7e1d0;
+ border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;
+ font-size:17px;color:var(--soft)}
+
+.page{max-width:1000px;margin:0 auto;padding:46px 34px 90px}
+.sheet{display:grid;grid-template-columns:34fr 62fr;gap:46px;align-items:start}
+figure.plate{margin:0;position:sticky;top:34px}
+figure.plate img{display:block;width:100%;border:1px solid var(--rule)}
+figure.plate figcaption{font-size:11.5px;letter-spacing:.16em;color:var(--soft);
+ text-align:center;margin-top:10px}
+.letter{font-size:17px;line-height:1.95}
+.initial{float:left;width:86px;height:86px;margin:2px 18px 6px 0;overflow:hidden;
+ display:flex;align-items:center;justify-content:center;
+ font-size:44px;line-height:1;background:#efe9d8;
+ border:1px solid var(--ink);
+ box-shadow:inset 0 0 0 3px var(--paper),inset 0 0 0 4px var(--ink)}
+.initial img{width:100%;height:100%;object-fit:cover;display:block}
+.who{font-size:17px;letter-spacing:.14em;padding-bottom:9px;margin-bottom:16px;
+ border-bottom:1px solid var(--rule)}
+.who .date{float:right;font-size:12px;letter-spacing:.2em;color:var(--soft);
+ padding-top:5px}
+.letter p{margin-bottom:1.05em;text-align:justify}
+.letter p.sign{text-align:right;font-size:19px;letter-spacing:.3em;margin-top:26px}
+@media(max-width:760px){.page{padding:24px 18px 64px}
+ .sheet{grid-template-columns:1fr;gap:20px}
+ figure.plate{position:static}
+ figure.plate img{width:auto;max-width:100%;max-height:40vh;margin:0 auto}
+ figure.plate figcaption{margin-top:8px}
+ .letter{font-size:16.5px}
+ .initial{width:70px;height:70px;font-size:36px;margin:2px 14px 4px 0}
+ .who{font-size:16px;padding-bottom:7px;margin-bottom:14px;
+  display:flex;align-items:baseline;flex-wrap:wrap;column-gap:12px;row-gap:2px}
+ .who .date{float:none;order:2;font-size:11px;letter-spacing:.14em;padding-top:0}}
+
+#locked{max-width:460px;margin:22vh auto;padding:0 24px;
+ font-family:"Songti TC","Noto Serif TC",Georgia,serif;color:#6b675c;
+ font-size:15px;line-height:2;letter-spacing:.08em;text-align:center}</style>
+</head><body>
+<div id="locked">這封信要用信裡附的網址打開。</div>
+<div id="out"></div>
+<script>
+(async function(){
+  var data={"iv": "jfyYakkga7KseGsO", "ct": "AqEeU1en0ezfLRAou54WUmrCnPGJGG9Hr7x2CZ63K8D_e18Ytna6l6GPeTiKm67mImu9dHpA1z--WZuO_T-f2q7r-CScC80pMYMYkqzEjffkIL7Kl9dNaG--BxXWRshIKO9hH-UNPXnXHcVfDH6lBEjTajaYmMpClpJsFKbST20k8FxRzJmW9DbcBHq7NKNJheOz2J1HEQF8QZBbO55kECwWy1BJwuFL5RUBRtEwzrKDQl7gkf40BkqdSjdGPGwLlO5aSh7be-PDZZhp4T1KOsUo9Z4pIJY_9c1M2eC4jYLUlnropHeBgUL5mfwb2kd7yTAIYnhC-0o4vjygTtNqcGeAtDayL7efyk27bhATqjjwd1zJM0ppfJ7WFrTnXF6f6bYJD30C_l3XF7AUkTNNXI8vWosm7lFz8kCxSyKPAq8ckmQxVcapJjfDHdZLs0Z2XoC3DIh1Oj2u6ykD2vDL4GQ9AnQVXULlKeuCwpgu5vv-ThQT-P6HpA8w_Sg5PM8BAeaIH_dCr1kAn1uXVIAPyK69_iX5yIkHP3myBMogdz_CVaQo3K8BqXc4SofI4fKrH-RNSt1RTBPfYVLOmcWLC1M_a2ioXZiVlpbM3aqz_ojF0Ups-pnHs0s4NZrJRR8U3Y1OrG7b7dbgA8L_8cPy9I1o-IJn1xq4N7KauH-1qy01uWt0grMNsBSxq9Jbwv47BMJIpSJDImn6Z3gwPNpYj3j3VHlV6sPNbfs4amNiHc2AsfaXDBlesJq-9JgzOsOUvX0wYRtj-VxZLyPp4VjhPIXRvmf2UZ6SDqxqaV_xJO8s6h9JqWi6aCDsHDKaxlyr0jDnkqHUsG7vMyZBTsfH6bgQ0pEJiN5kYY9Q_PD8T8bF-_GRUCfxwOW5GmXlQb-3aXSgCvlivZDb_QhyCWQMvKfCl3tHxxJ0OtWweTbHkA9zB_J3BPv4yE2i6zLcDlC-buOc2qtl6JUmzeoBvMd3CGFkJ_wMrIOo74g_Eu4Qx_H_cOn19qvxeaas9ox9PO6hfEdBkG1C_uMGmgc6vcvlg4lGMTVaRaWXA0PWSHpooJTTU305CWmohapC77Q2Q9o4-itKrFulbm763FsCOHaIw-ONTSBpHeKR8Rh1_cH-5uvHrV5uetSihxfslr7tgSaAWohVzmanm8OS-H88v7XUvzktQyiGUgauWeEtwZImG7-u-U3d23NhJbXzBPiyj5MqDt1ARn6Q55BTBf_SjY3jccHr8fEUh4eouxT0rVMwygAqSWZDxm7gRHTRQq9nboa6rrtvSx2mkg-OIvzhHhpc40F0q-uM7MdXTxraJI_Z34OO41JZf6_OSaWg-dRC310zA5Eqi52iIC6kKSZk9bNJzUOkKCkQTu2AVNI1m84R56Zm6VhPr5J9VGKvhVPahJ7tyJV4uR47rxAKykjPknEqS763H6HBk1SbVTu0BCjKbcZpFGd2dFmp0F4oKPCVrVUJiRhHcSIe27_kuwunJ2YnPxwMsB-GoDej6bbclzBnmSqFvSS3cwC0w7aoMB2WTT7R1FZyPPgiZTYGcDPfJbkesOTsVA2TKybW-nT6_vvacx-3X6Blnko3pS1ymJfujkHaciNjDEaW6ddSz8IUYV6LCoJ7sjrPSM1NbhJxOSU5AuJfMRIQ10dV4XbkOJBz5j-Oo-83A_Onc5y55w_ZUBXT2Q-81ORva-9PbimMTKxKEWsOcXqQwyOnRIFhu5nC4hj3S9o820KVoAANSAx8cl_dM_PD4X7n38-itro-IttTPKrE0kewqpghofF_D7PH7bBwrJ5kosd3Ss_dP3mk5QyBsjUbfCwPG0rdUi1A61p8Gj4l9B8T2Pz0XlFFTheKT_RyJuUzuks1xQQ-fgjxITRBQieLSsDbcROntdSjVQO3CQWY5z2PD2vssQDXrSu6ct0unmwdro7qW65Q7QN7bvnTOv46wZ63mm58zWXwGGq1sZ8lRLe5X06FzGfZA9myH3YMYNfrQmh82VY60XaZEil_gN1UqcRzjFtH_Iq0WLwG_Z35_jbgc_VSxr_kU1aYI0Le2Iji6q88pkLhWorV1WCPfmOiwKCPoWJ9X6JmeaNJ_Hou73JYsiVyS94Vb-9BDPT9vZnyJIXkNsTGWRat0un0AaHfl4tPlHZaAoBDEZ9MG7dqyQs2trzSs7XU0rRSojpO4dzexlYAWQBUIBIM28FlTOT63zq5XFP_ggcdOeQtofhro5Yhl7dabgNQJI0Td6PWlr0fuDfu4gn0tcOlJc2AirAxMS51OHQHXOSmKQtyhMQGL-usBxnJ7n-l1DeyTOw58EccCIhOd9z3mgFUJCeJwr-g2WCwhELW0ouRHEALwTLq8EZz6kY0SZtLESGcA9xnTykfqeyHN4uba3MB0WfkFhnwn2Na7sHuha8B2Rti6SwgP1n2GZxTBPj_EInBLBdEoaBM5g8KOO69q0k1mm17V6HDjdUROFt3wJhVXUMviHLG7fq5xzIRNB_u-KgCULQj5axbzaggcE5y0zgaLg1-0OUYU_4P8-X_PEWHzwK-Dm6n10c-z7WM72VgVdhykhqPzaz4tjhRitbUfRGZhHv_n--AFmyhti43dN-A9fIK8muqErL0mwWYuHP78ioaRYZtbGlHiZabJ_boH-RgziJGFUwJoKqja0p5IazvrQLs6yn0qKLWo8N73HFGFWIPzhS2EINHZHc35Jt1S_fC6XJe1rPt-1s7xSMq5i9s9ki9hGWHXG8a2QyPTWNHun1ABd0WRrDsZqcG7YrDJ9j95r7mb6jOe8pddAdC0Zsp0VbA34a3wk-K9u5Bngm1TlhsvyvANgH0BEBHmIdyL30Q0oHg_TAhR3MC_m_AxZ9UnYg7kN63XEuf9AnOUfZpW8c0xaVgvj-bX_h62lX0ApxJJVDjYGApTsAt1Vb4ayBf-OjaefLagi22_4cl0qymy_uT2852_1B24bRPyuyvoBTFYOFZorduYwNpnD5ElgV8OWxFLxPzRmtj8QD7fItrmFiAqnu1a6pkBVOciVYvNVrYwR9O3VIslZrICoMb5-Aw8Tik0RnEtW1_gyiG57wY-5YZIzRHdNYDqEvnPQQE7LDCmrCUsRRt8LAu7K0dUnDXFEW8iBpGxUzwMImhWzkLsYUZvedDQ4TkNJkT9mKsn_6rGNV9QhAGEWmJ6yoOfkKIHiWQ_1zAyve26qOFTzr41ReCxnseNLf3pHwwQw5ik8vRTg3Y4gRuqTwOAid-nMwrICrKz7_gTEdpk3qjKptWkx4KIXpJZuahh-TC0N5-_MeG3AB1T-dbBU9yMJ6g-bB7PIhd_cw_lkwo4E3MJPN_AdbrommaXstzWGGmK_OayZoKa95DUK5y8qtWhRBUnZJKeKJeHMt8rFZYyXRUlKgL--LlPFDOiV0Ee_2jfEofP4ORHsRphSLRi4D9vXzaxh8S10xCdSQF7feIWPQnjdI44IkwlOZ5-MOIw0A-BnfhI6DLSEkGuN0-uCCdZBcxis4HAaIm-APNpxdlKwPLggSuvPOwFItoqZgAfIiTXeG28MXdmmY2Khl2osYLUTa5dSKM4ixIvOKQL0AmzhlXt82bAqwtOLHW4LKZ7ljn1l-_RIoi3WTO12fhaJTejk8yIO_yDP5FziC5PViRIQ4I2xtkK2A8kBUJYzB10a7M3pgRUWOYyH51dE4tt_-8-ItD7r7uiaFU3QVv4H8n6LEppzI4TdnEHnSMPyFwWal6mq-2dJTqiSska22V9NeM2zMEVE_XJ1IT4M6zLmvkENBbb3bscacla9og81bK3BXvgmN8Vuc_CBIcSRf16_VYs-_f9UJDJSRWPNadB4_5EDPUkMRGsiZ1VxgjZ2__PBzzuXdGCVvaqNOv2vFOs4D4HHTtjCulyP8P6J7ZBdkKGRmqGVlQVNQ1KjHhBdTWSPdhn-HGxfI-U_9zdjMxIBwX4DCCEUjA4A8p8eKia3fcfWZUZa0tn7NDuaAFh7jEuQ2AuzKu44okkbz4JXTfGUqgYbVLoJ73_1XlbJZj3qZHw4nKQp5zlE89gh0FdNT43EBHqldOxUoGjqhJQGVqCHl6SHA1_uLtVps6BYksvMtCVETikMGwgDXxsv63OSDsQccr5GcIVPThyihJTVljWfjHaMr8qbHPYcE5a3IADTRu_fVcg4berTdZMBwOIwk-rJxm0aB_d6ecK2A-Fec6sSqirhtQVkic4ueJUGNS7TB_aK5Mjzm3UfbsPbp7143DLJjZLJ_IfMB0z_yddrGxb_jitqI4bJLuYaBnD8kVu4zDQgK21ekXfgFt4r697mlttTaAhQO-oNNrR3PG6yG4OHbFdDBMmtMgnZW9JiYXrWgbo5-7ILzJJx78klRz18UWCs71CWP17cUJVICWBOMQ0LLX4xy4w9s5vP9KApUj88-ufAmbEg4tTenGJERFMQGK-_w6IxU5O05OjvT_2DZ2Znch-N9MSFPmfmCwHq-Q7jtT4mdPaaubQKJDKMoXMm7PJMmSQh9f-di4bQ"};
+  var raw=location.hash.slice(1);
+  if(!raw) return;
+  try{
+    var b=function(s){s=s.replace(/-/g,"+").replace(/_/g,"/");
+      while(s.length%4)s+="=";
+      return Uint8Array.from(atob(s),function(c){return c.charCodeAt(0)})};
+    var key=await crypto.subtle.importKey("raw",b(raw),"AES-GCM",false,["decrypt"]);
+    var plain=await crypto.subtle.decrypt({name:"AES-GCM",iv:b(data.iv)},key,b(data.ct));
+    document.getElementById("out").innerHTML=new TextDecoder().decode(plain);
+    document.getElementById("locked").remove();
+    var t=document.querySelector("#out [data-title]");
+    if(t) document.title=t.getAttribute("data-title");
+  }catch(e){
+    document.getElementById("locked").textContent="鑰匙不對，這封信打不開。";
+  }
+})();
+</script></body></html>
